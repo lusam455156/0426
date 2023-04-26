@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: #e2fdb5fb;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+a {
+  color: initial;
+  text-decoration: initial;
+}
+
+.box {
+  width: 380px;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.box:hover {
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+  transform: translate(-5px, -5px);
+}
+
+.top {
+ background-image: url(IMG_3741.JPG);
+  background-size: cover;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.top .tag {
+  width: 25px;
+  height: 50px;
+  background-color: #63bfc4;
+  float: right;
+  margin-right: 20px;
+}
+
+.top .name {
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  bottom: 0px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.top .name .smallText {
+  font-size: 14px;
+}
+
+.cirbutton {
+  width: 50px;
+  height: 50px;
+  background-color: #69cfca;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
+
+.bottom {
+  padding: 10px 20px 20px 20px;
+}
+
+.bottom li {
+  padding: 5px 0px;
+}
+
+.bottom h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.bottom ul {
+  list-style: none;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+}
+
+.btnWebsite {
+  background-color: #69cfca;
+  color: white;
+  transition: 0.5s;
+}
+
+.btnWebsite:hover {
+  background-color: #69cfca;
+}
+
+.btnNews {
+  border: solid 1px black;
+  float: right;
+}
+
+.btnNews:hover {
+  background-color: #eee;
+}
+
+
+.swiper {
+  width: 380px;
+  height: 580px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #69cfca;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper button {
+  width: 50px;
+  height: 50px;
+  color: #1067ae;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: opacity 0.25s;
+}
+
+.swiper button:hover {
+  opacity: 0.8;
+}
+
+.swiper button::before, .swiper button::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  isolation: isolate;
+  padding: 50px 25px 25px;
+  color: #fff;
+}
+
+.swiper-description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.swiper-description h2 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.swiper-description p {
+  font-size: 14px;
+  max-width: 50%;
+  margin-bottom: 15px;
+}
